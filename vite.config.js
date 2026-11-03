@@ -1,7 +1,8 @@
-import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
-// https://vite.dev/config/
+// plugins ki list mein tailwindcss() zaroor ho, warna styles nahi aayengi
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
 })
